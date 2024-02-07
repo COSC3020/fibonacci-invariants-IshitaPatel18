@@ -16,6 +16,7 @@ function sum(value, tmp)
 
     if(value < 0)
     {
+        tmp[0] = 0;
         return 0;
     }
     
