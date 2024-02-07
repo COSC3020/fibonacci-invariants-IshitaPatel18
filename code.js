@@ -8,17 +8,20 @@ function fib(value)
 
 function sum(value, tmp)
 {
+    
+    if(value < 0)
+    {
+        tmp[0] = 0;
+        return 0;
+    }
+    
     if (value <= 1)
     {
         tmp[value] = value;
         return value;
     }
 
-    if(value < 0)
-    {
-        tmp[0] = 0;
-        return 0;
-    }
+    
     
     tmp[value] = sum(value -1, tmp) + sum(value -2, tmp);
     return tmp[value];
