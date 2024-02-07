@@ -1,7 +1,7 @@
 function fib(value)
 {
     let tmp = [];
-    two(value, tmp);
+    sum(value, tmp);
     return tmp;
     
 }
