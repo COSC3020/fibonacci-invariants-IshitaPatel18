@@ -15,10 +15,17 @@ function sum(value, tmp)
         return 0;
     }
     
-    if (value <= 1)
+    if(value === 0)
     {
-        tmp[value] = value;
-        return value;
+        tmp[0] = 0;
+        return 0;
+    }
+    
+    if(value === 1)
+    {
+        tmp[0] = 0;
+        tmp[1] = 1;
+        return 1;
     }
 
     
