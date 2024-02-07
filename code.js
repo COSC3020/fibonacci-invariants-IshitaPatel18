@@ -14,7 +14,7 @@ function sum(value, tmp)
         return value;
     }
     
-   // tmp[value] = one(value -1, tmp) + one(value -2, tmp);
+    tmp[value] = one(value -1, tmp) + one(value -2, tmp);
     
     return tmp[value] = one(value - 1, tmp) + one(value -2, tmp);
 }
