@@ -28,3 +28,5 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+My answer: The invariant for this recursive implementation is, the elements at the indices of the arr[0...i-1] are the sum of the 2 elements before them, where the value of the first two elements is the value of themselves. My reasoning for this invariant is because every element but the first two elements, share the same pattern, that is the sum of the two elements before them in the array, since this implementation results in an array of the fibonacci numbers. So, I mention that the array from the beginning to the previous iteration has that pattern, specifying that the first two elements are the value of themselves. The basis of my invariant came from $\a_k = a_{k-1} + a_{k -2}$ where $\a_0 = 0$ and $\a_1 = 1$ which uses recursion to solve.
