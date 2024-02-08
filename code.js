@@ -3,7 +3,6 @@ function fib(value)
     let tmp = [];
     sum(value, tmp);
     return tmp;
-    
 }
 
 function sum(value, tmp)
